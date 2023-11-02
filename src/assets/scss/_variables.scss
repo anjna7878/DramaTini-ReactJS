@@ -1,0 +1,56 @@
+// @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+
+$pink: #fc097c;
+$light-grey: #d3d3d3;
+$blue: #03a4ed;
+$biscuit: #b98f7d;
+$white: #ffffff;
+$black:#000000;
+$gray: #000000a3;
+$neon-yellow: #e3ff00;
+$neon-light-yellow: #fdf9b5;
+$facebook: #4267b2;
+$google: #db4437;
+$grey: #d4d4d4;
+$mui-error:#f44336;
+
+// background: #F1F0F0;
+
+$shadow: 0 0.46875rem 2.1875rem rgba(4, 9, 20, 0.03),
+  0 0.9375rem 1.40625rem rgba(4, 9, 20, 0.03),
+  0 0.25rem 0.53125rem rgba(4, 9, 20, 0.05),
+  0 0.125rem 0.1875rem rgba(4, 9, 20, 0.03);
+
+// $red: #c40721;
+// $mat-red:#f50057;
+// $grey: #6e757a;
+// $dark-grey:#333333;
+
+// $white : #fff;
+// $charcoal: #333;
+// $green:#53aab1;
+// $orange: #f39968;
+// $skyblue: aliceblue;
+// $matButtonSecondaryDisabled:#f50056c9;
+// $patric: 'Patrick Hand', cursive;
+$work: "Poppins", sans-serif;
+$roboto: "Roboto", sans-serif;
+$montserrat: "Montserrat";
+
+$xs: "only screen and (max-width : 575.98px)";
+$sm: "only screen and (max-width : 767.98px)";
+$md: "only screen and (max-width : 991.98px)";
+$lg: "only screen and (max-width : 1199.98px)";
+$lg-width: "only screen and (max-width : 1499.98px)";
+$xl: "only screen and (min-width : 1500px)";
+$very-large-desktop: "only screen and (min-width : 1750px)";
+
+// $lpLogoPath: "/assets/img/logo-white.svg";
+// $lpLogoPathPinned: "/assets/img/logo-white.svg";
+
+// color mixing
+$danger: #dc3545;
+$danger_dark: #bd1120;

@@ -1,0 +1,56 @@
+#user-dashboard-parent {
+  #theater-event-create-section-parent {
+    box-shadow: $shadow;
+    padding: 18px 36px;
+    height: 100%;
+    .theater-warning {
+      text-align: center;
+      h5 {
+        font-size: 14px;
+        max-width: 315px;
+        margin: 150px auto 36px;
+        color: $pink;
+      }
+      a {
+        background: $pink;
+        border-radius: 50px;
+        color: $white;
+        font-size: 14px;
+        padding: 12px 24px;
+        text-decoration: none;
+        font-weight: 500;
+      }
+    }
+    #event-create-form {
+      svg {
+        color: $pink;
+      }
+
+      .event_end_date,
+      .event_start_date,
+      .event_start_time,
+      .event_end_time {
+        .MuiFormControl-root {
+          // width: 100%;
+        }
+        button {
+          padding-right: 0;
+        }
+      }
+      .submit-btn {
+        margin-top: 50px;
+        margin-bottom: 40px;
+        button {
+          background: $pink;
+          border-radius: 50px;
+          padding: 10px 0;
+          color: $white;
+          font-size: 16px;
+          text-transform: capitalize;
+          width: 235px;
+          max-width: 325px;
+        }
+      }
+    }
+  }
+}

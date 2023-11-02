@@ -1,0 +1,45 @@
+@import 'variables';
+@import 'mixins';
+@import 'custom_material';
+@import 'custom_style';
+
+
+
+// components
+@import './components/footer';
+@import './components/navbar';
+@import './components/header';
+@import './components/change-password';
+@import './components/mui_top_alert';
+@import './components/business_new_coupon';
+
+
+// pages
+@import 'pages/home';
+@import 'pages/sign-in';
+@import 'pages/sign-up';
+@import 'pages/reset-password';
+
+@import 'pages/search';
+@import 'pages/search-result';
+
+@import 'pages/profile';
+@import 'pages/dashboard/dashboard-main';
+@import 'pages/dashboard/business-dashboard-pages/business-dashboard';
+@import 'pages/dashboard/business-dashboard-pages/business-onboard';
+@import 'pages/dashboard/business-dashboard-pages/business-coupons';
+
+
+@import 'pages/dashboard/theater-dashboard-pages/theater-dashboard';
+@import 'pages/dashboard/theater-dashboard-pages/theater-onboard';
+@import 'pages/dashboard/theater-dashboard-pages/theater-events-list';
+@import 'pages/dashboard/theater-dashboard-pages/theater-event-create';
+
+@import 'pages/dashboard/tini-dashboard-pages/tini-dashboard';
+
+
+@import 'pages/not-found';
+
+
+
+

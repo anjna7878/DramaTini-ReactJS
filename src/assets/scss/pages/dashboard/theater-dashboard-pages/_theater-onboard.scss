@@ -1,0 +1,563 @@
+#user-dashboard-parent {
+  #theater-onboard-section-parent {
+    box-shadow: $shadow;
+    padding: 18px 36px;
+   
+
+    #theater-onboard-form {
+      svg {
+        color: $pink;
+      }
+
+      #file-upload {
+        .MuiFormControl-root {
+          position: relative;
+        }
+        label#upload-btn1 {
+          position: absolute;
+          right: 15px;
+          top: 8px;
+          .MuiButtonBase-root {
+            border-radius: 0;
+            background-color: $pink;
+            color: $white;
+            text-transform: capitalize;
+            padding: 16px 16px;
+            border-bottom-right-radius: 4px;
+            border-top-right-radius: 4px;
+          }
+        }
+      }
+      .theater-map-location {
+        margin-top: 12px;
+
+        .input-group {
+          border-bottom: 1px solid grey;
+          input {
+            padding: 20px 12px;
+            border: none;
+          }
+        }
+        .input-group-text {
+          background: transparent;
+          border: none;
+          padding: 0 4px;
+        }
+        svg {
+          font-size: 18px;
+        }
+      }
+      #image-preview {
+        margin-top: 22px;
+        .img-box {
+          img {
+            width: 200px;
+            border: 1px solid lightgray;
+            border-radius: 6px;
+          }
+        }
+      }
+
+      .submit-btn {
+        margin-top: 50px;
+        margin-bottom: 40px;
+        button {
+          background: $pink;
+          border-radius: 50px;
+          padding: 10px 0;
+          color: $white;
+          font-size: 16px;
+          text-transform: capitalize;
+          width: 235px;
+          max-width: 325px;
+        }
+      }
+    }
+  }
+}
+
+// #theater-dashboard-section {
+//   #theater-dashboard-parent {
+//     max-width: 1125px;
+//     margin: 75px auto;
+
+//     #theater-onboard-section-parent {
+//       box-shadow: $shadow;
+//       padding: 18px 36px;
+//       h6.or {
+//         display: flex;
+//         flex-direction: row;
+//         color: $pink;
+//         width: 450px;
+//         margin: 45px auto 30px;
+//         span {
+//           color: #000;
+//           font-size: 22px;
+//         }
+//         &::before,
+//         &::after {
+//           content: "";
+//           flex: 1 1;
+//           border-bottom: 3px solid;
+//           margin: auto;
+//         }
+//         &::before {
+//           margin-right: 10px;
+//         }
+//         &::after {
+//           margin-left: 10px;
+//         }
+//       }
+
+//       #theater-onboard-form {
+//         svg {
+//           color: $pink;
+//         }
+
+//         #file-upload {
+//           .MuiFormControl-root {
+//             position: relative;
+//           }
+//           label#upload-btn1 {
+//             position: absolute;
+//             right: 15px;
+//             top: 21px;
+
+//             .MuiButtonBase-root {
+//               border-radius: 0;
+//               background-color: $pink;
+//               color: $white;
+//               text-transform: capitalize;
+//             }
+//           }
+//         }
+//         .theater-map-location {
+//           margin-top: 12px;
+
+//           .input-group {
+//             border-bottom: 1px solid grey;
+//             input {
+//               padding: 20px 12px;
+//               border: none;
+//             }
+//           }
+//           .input-group-text {
+//             background: transparent;
+//             border: none;
+//             padding: 0 4px;
+//           }
+//           svg {
+//             font-size: 18px;
+//           }
+//         }
+
+//         #coupon-upload {
+//           margin-top: 9px;
+//           .MuiFormControl-root {
+//             position: relative;
+//             // width: calc(100% - 80px);
+//             width: 100%;
+//           }
+//           label#upload-btn2 {
+//             position: absolute;
+//             right: 15px;
+//             bottom: 0px;
+//             width: 80px;
+//             .MuiButtonBase-root {
+//               border-radius: 0;
+//               background-color: $pink;
+//               color: $white;
+//               text-transform: capitalize;
+//               width: 100%;
+//             }
+//           }
+//         }
+
+//         .submit-btn {
+//           margin-top: 50px;
+//           margin-bottom: 40px;
+//           button {
+//             background: $pink;
+//             border-radius: 50px;
+//             padding: 10px 0;
+//             color: $white;
+//             font-size: 16px;
+//             text-transform: capitalize;
+//             width: 235px;
+//             max-width: 325px;
+//           }
+//         }
+//       }
+//     }
+
+//     #theater-section-parent {
+//       box-shadow: $shadow;
+//       padding: 18px 36px;
+//       h6.or {
+//         display: flex;
+//         flex-direction: row;
+//         color: $pink;
+//         width: 450px;
+//         margin: 45px auto 30px;
+//         span {
+//           color: #000;
+//           font-size: 22px;
+//         }
+//         &::before,
+//         &::after {
+//           content: "";
+//           flex: 1 1;
+//           border-bottom: 3px solid;
+//           margin: auto;
+//         }
+//         &::before {
+//           margin-right: 10px;
+//         }
+//         &::after {
+//           margin-left: 10px;
+//         }
+//       }
+
+//       #business-update-form {
+//         svg {
+//           color: $pink;
+//         }
+//         #file-upload {
+//           .MuiFormControl-root {
+//             position: relative;
+//           }
+//           label#upload-btn {
+//             position: absolute;
+//             right: 15px;
+//             bottom: 1px;
+//             .MuiButtonBase-root {
+//               border-radius: 0;
+//               background-color: $pink;
+//               color: $white;
+//               text-transform: capitalize;
+//             }
+//           }
+//         }
+//         .theater-location-preference,
+//         .business-location-preference {
+//           .input-group {
+//             border-bottom: 1px solid grey;
+//             input {
+//               padding: 20px 12px;
+//               border: none;
+//             }
+//           }
+//           .input-group-text {
+//             background: transparent;
+//             border: none;
+//             padding: 0 4px;
+//           }
+//           svg {
+//             font-size: 18px;
+//           }
+//         }
+//         .theater-location-preference {
+//           margin-top: 12px;
+//         }
+
+//         .qr-generate-btn {
+//           background: $pink;
+//           border-radius: 0;
+//           text-transform: capitalize;
+//           font-weight: 500;
+//           color: $white;
+//           bottom: 1px;
+//         }
+
+//         .qr-code-share .share-btn {
+//           background: $pink;
+//           border-radius: 0;
+//           text-transform: capitalize;
+//           font-weight: 500;
+//           color: $white;
+//           margin-top: 21px;
+//           width: 100%;
+//         }
+//         .share-btn svg {
+//           color: #fff;
+//         }
+
+//         .submit-btn {
+//           margin-top: 50px;
+//           margin-bottom: 40px;
+//           button {
+//             background: $pink;
+//             border-radius: 50px;
+//             padding: 10px 0;
+//             color: $white;
+//             font-size: 16px;
+//             text-transform: capitalize;
+//             width: 235px;
+//             max-width: 325px;
+//           }
+//         }
+//       }
+//     }
+
+//     #event-create-section-parent {
+//       box-shadow: $shadow;
+//       padding: 18px 36px;
+//       h6.or {
+//         display: flex;
+//         flex-direction: row;
+//         color: $pink;
+//         width: 450px;
+//         margin: 45px auto 30px;
+//         span {
+//           color: #000;
+//           font-size: 22px;
+//         }
+//         &::before,
+//         &::after {
+//           content: "";
+//           flex: 1 1;
+//           border-bottom: 3px solid;
+//           margin: auto;
+//         }
+//         &::before {
+//           margin-right: 10px;
+//         }
+//         &::after {
+//           margin-left: 10px;
+//         }
+//       }
+
+//       h5.theater-warning {
+//         font-size: 14px;
+//         max-width: 315px;
+//         margin: 150px auto;
+//         text-align: center;
+//         color: $pink;
+//       }
+//       #event-create-form {
+//         svg {
+//           color: $pink;
+//         }
+
+//         // #file-upload {
+//         //   .MuiFormControl-root {
+//         //     position: relative;
+//         //   }
+//         //   label#upload-btn1 {
+//         //     position: absolute;
+//         //     right: 15px;
+//         //     bottom: 1px;
+
+//         //     .MuiButtonBase-root {
+//         //       border-radius: 0;
+//         //       background-color: $pink;
+//         //       color: $white;
+//         //       text-transform: capitalize;
+//         //     }
+//         //   }
+//         // }
+
+//         // #coupon-upload {
+//         //   margin-top: 9px;
+//         //   .MuiFormControl-root {
+//         //     position: relative;
+//         //     // width: calc(100% - 80px);
+//         //     width: 100% ;
+//         //   }
+//         //   label#upload-btn2 {
+//         //     position: absolute;
+//         //     right: 15px;
+//         //     bottom: 0px;
+//         //     width: 80px;
+//         //     .MuiButtonBase-root {
+//         //       border-radius: 0;
+//         //       background-color: $pink;
+//         //       color: $white;
+//         //       text-transform: capitalize;
+//         //       width: 100%;
+//         //     }
+//         //   }
+//         // }
+
+//         .submit-btn {
+//           margin-top: 50px;
+//           margin-bottom: 40px;
+//           button {
+//             background: $pink;
+//             border-radius: 50px;
+//             padding: 10px 0;
+//             color: $white;
+//             font-size: 16px;
+//             text-transform: capitalize;
+//             width: 235px;
+//             max-width: 325px;
+//           }
+//         }
+//       }
+//     }
+
+//     #events-listing-section-parent {
+//       box-shadow: $shadow;
+//       padding: 18px 18px;
+//       h6.or {
+//         display: flex;
+//         flex-direction: row;
+//         color: $pink;
+//         width: 450px;
+//         margin: 45px auto 30px;
+//         span {
+//           color: #000;
+//           font-size: 22px;
+//         }
+//         &::before,
+//         &::after {
+//           content: "";
+//           flex: 1 1;
+//           border-bottom: 3px solid;
+//           margin: auto;
+//         }
+//         &::before {
+//           margin-right: 10px;
+//         }
+//         &::after {
+//           margin-left: 10px;
+//         }
+//       }
+
+//       #event-listing {
+//         .loading-section {
+//           height: 500px;
+//         }
+//         h6.no-data {
+//           margin: 150px auto;
+//           text-align: center;
+//           color: $pink;
+//         }
+//         .single-event {
+//           margin: 6px 0;
+//           background-color: rgba($grey, 0.5);
+//           .event-logo {
+//             .MuiAvatar-root {
+//               width: 75px;
+//               height: 75px;
+//               margin: 0 auto;
+//             }
+//           }
+//           .event_basic_info {
+//             display: flex;
+//             justify-content: space-between;
+//           }
+//           .event_actions {
+//             margin: auto;
+//             .edit_btn {
+//               background-color: $pink;
+//               color: #fff;
+//               text-transform: capitalize;
+//             }
+//           }
+//         }
+//       }
+//     }
+
+//     // #coupons-section-parent {
+//     //   box-shadow: $shadow;
+//     //   padding: 18px 12%;
+//     //   h6.or {
+//     //     display: flex;
+//     //     flex-direction: row;
+//     //     color: $pink;
+//     //     width: 450px;
+//     //     margin: 45px auto 30px;
+//     //     span {
+//     //       color: #000;
+//     //       font-size: 22px;
+//     //     }
+//     //     &::before,
+//     //     &::after {
+//     //       content: "";
+//     //       flex: 1 1;
+//     //       border-bottom: 3px solid;
+//     //       margin: auto;
+//     //     }
+//     //     &::before {
+//     //       margin-right: 10px;
+//     //     }
+//     //     &::after {
+//     //       margin-left: 10px;
+//     //     }
+//     //   }
+
+//     //   #coupon-create-form {
+//     //     svg {
+//     //       color: $pink;
+//     //     }
+
+//     //     .submit-btn {
+//     //       margin-top: 50px;
+//     //       margin-bottom: 40px;
+//     //       button {
+//     //         background: $pink;
+//     //         border-radius: 50px;
+//     //         padding: 10px 0;
+//     //         color: $white;
+//     //         font-size: 16px;
+//     //         text-transform: capitalize;
+//     //         width: 235px;
+//     //         max-width: 325px;
+//     //       }
+//     //     }
+//     //   }
+//     // }
+//   }
+
+//   // hover effect
+//   .dashboard-menu {
+//     .list-group {
+//       .list-group-item {
+//         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+//         -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+//         transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+//         &::after {
+//           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+//           -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+//           transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+//         }
+//         &:hover {
+//           -webkit-transform: scale(1.25, 1.25);
+//           transform: scale(1.05, 1.05);
+//           opacity: 0.8;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .drag-drop-section {
+//     height: 255px;
+//     background: #314584;
+//     border-radius: 4px;
+//     width: 90%;
+//     margin: 0 auto;
+//     box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11), 0 5px 15px 0 rgba(0, 0, 0, 0.08);
+//     @media #{$xs} {
+//         width: 100%;
+//     }
+
+//     p {
+//         text-align: center;
+//         padding-top: 60px;
+//         font-weight: 500;
+//         color: #ffffff;
+//     }
+
+//     .upload-btn{
+//         text-align: center;
+//         margin-top: 25px;
+//     }
+
+//     .ui.horizontal.divider {
+//         margin: 0 auto;
+//         width: 150px;
+//         color: #ffffff;
+//     }
+// }

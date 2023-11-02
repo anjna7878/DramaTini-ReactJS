@@ -1,0 +1,306 @@
+#SearchResultPageSection {
+  #banner-parent {
+    background-image: url("../../images/search.jpg");
+    // height: 600px;
+    //   background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -120px;
+
+    #search-parent-box {
+      color: $white;
+      // padding-top: 235px;
+      padding-bottom: 50px;
+      //   padding-left: 10%;
+      #search-container {
+        margin-top: 235px;
+        padding: 0;
+        .search-box {
+          margin-right: 4px;
+          background: rgba(41, 41, 41, 0.6);
+          padding: 35px;
+          margin-bottom: 50px;
+          h1 {
+            font-size: 42px;
+          }
+          label {
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 700;
+            margin-top: 26px;
+          }
+          input {
+            height: 37px;
+            border-radius: 0;
+          }
+          button.send-icon {
+            color: white;
+            background: $blue;
+            border-radius: 0px;
+            padding: 5px 35px;
+          }
+          p {
+            font-family: Poppins;
+            font-size: 12px;
+            font-style: italic;
+            font-weight: 400;
+          }
+          h6 {
+            font-family: Roboto;
+            font-size: 14px;
+            margin: 37px 0 8px;
+          }
+
+          button.search-btn {
+            width: 220px;
+            padding: 10px 0;
+            background-color: $blue;
+            color: $white;
+            font-weight: 600;
+          }
+        }
+      }
+
+      #search-results {
+        margin-top: 120px;
+        background: white;
+        padding: 20px 0 0px;
+
+        height: 615px;
+        overflow: auto;
+        #theaters-list,
+        #business-list {
+          .col-md-12 {
+            padding: 0;
+          }
+
+          .loading-section {
+            height: 550px;
+          }
+          h5.no-result {
+            color: $pink;
+            text-align: center;
+            font-size: 14px;
+            width: 150px;
+            margin: 50px auto;
+          }
+
+          h4 {
+            text-align: center;
+            font-family: Poppins;
+            line-height: 39px;
+            color: $pink;
+            font-size: 26px;
+          }
+
+          hr {
+            margin: -16px auto 17px;
+            width: 85%;
+            border-top: 4px solid rgba(3, 164, 237, 0.4);
+          }
+          .single-theater {
+            padding: 6px 12px;
+            color: gray;
+            margin: 4px 4px;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: rgba(211, 211, 211, 0.329);
+            h6 {
+              color: $blue;
+              font-size: 18px;
+            }
+            &:hover {
+              background-color: rgba($pink, 0.1);
+            }
+          }
+
+          .single-business {
+            padding: 4px 4px;
+            color: gray;
+            margin: 4px 4px;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: rgba(211, 211, 211, 0.329);
+            h6 {
+              color: $blue;
+              font-size: 18px;
+            }
+            &:hover {
+              background-color: rgba($pink, 0.1);
+            }
+          }
+        }
+      }
+      #google-map {
+        margin-top: 120px;
+        padding: 2px 8px;
+        color: $pink;
+        .gm-style-iw-d {
+          overflow: unset  !important;
+          // min-width: 100px !important;
+          // min-height: 43px !important; 
+        }
+    
+        .place-name {
+          margin: 4px 10px 13px 0px !important;
+          h6 {
+            color: $pink;
+          }
+        }
+      }
+    }
+  }
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #c40721;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #c40721;
+  }
+}
+
+#follow-business-pop-up {
+  .body-content {
+    padding: 16px;
+
+    .col-md-6#business-image-parent {
+      padding: 0;
+      .business-image {
+        img {
+          width: 100%;
+          height: 400px;
+        }
+      }
+    }
+    .col-md-6#business-info-parent {
+      padding: 0;
+      .close-btn {
+        position: absolute;
+        right: 0;
+      }
+
+      .business-info {
+        padding: 12px 36px;
+        h2 {
+          font-size: 36px;
+          font-weight: 600;
+          text-align: center;
+          margin: 18px 0 24px;
+          color: $pink;
+        }
+        address {
+          display: flex;
+          // justify-content: space-around;
+          h4 {
+            min-width: 130px;
+          }
+          h5 {
+            font-size: 18px;
+          }
+        }
+        h4 {
+          span {
+            font-size: 18px;
+            &.website a {
+              color: $pink;
+            }
+          }
+        }
+
+        .follow-btn {
+          text-align: center;
+          margin-top: 45px;
+          button {
+            background: $pink;
+            border-radius: 4px;
+            padding: 10px 0;
+            color: white;
+            font-size: 16px;
+            text-transform: capitalize;
+            width: 235px;
+            max-width: 325px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#follow-theater-business-pop-up {
+  .body-content {
+    padding: 16px;
+
+    .col-md-6#theater-image-parent {
+      padding: 0;
+      .theater-image {
+        img {
+          width: 100%;
+          height: 400px;
+        }
+      }
+    }
+    .col-md-6#theater-info-parent {
+      padding: 0;
+      .close-btn {
+        position: absolute;
+        right: 0;
+      }
+
+      .theater-info {
+        padding: 12px 36px;
+        h2 {
+          font-size: 36px;
+          font-weight: 600;
+          text-align: center;
+          margin: 18px 0 24px;
+          color: $pink;
+        }
+        address {
+          display: flex;
+          // justify-content: space-around;
+          h4 {
+            min-width: 130px;
+          }
+          h5 {
+            font-size: 18px;
+          }
+        }
+        h4 {
+          span {
+            font-size: 18px;
+            &.website a {
+              color: $pink;
+            }
+          }
+        }
+
+        .follow-btn {
+          text-align: center;
+          margin-top: 45px;
+          button {
+            background: $pink;
+            border-radius: 4px;
+            padding: 10px 0;
+            color: white;
+            font-size: 16px;
+            text-transform: capitalize;
+            width: 235px;
+            max-width: 325px;
+          }
+        }
+      }
+    }
+  }
+}

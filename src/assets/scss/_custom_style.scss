@@ -1,0 +1,194 @@
+html {
+  height: auto !important;
+}
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  //   font-family: $work !important;
+  //   background-image: url("../images/body-bg.svg");
+  //   background-position: top right;
+  //   background-repeat: no-repeat;
+  //   background-size: 920px;
+  //   overflow-y: auto !important;
+}
+
+.container {
+  padding: 0;
+  @media #{$very-large-desktop} {
+    // max-width: 67%;
+    max-width: 87%;
+    padding: 0;
+  }
+
+  @media #{$xl} {
+    max-width: 1483px;
+  }
+
+  @media #{$lg-width} {
+    max-width: 95%;
+    padding: 0 0;
+  }
+
+  @media #{$md} {
+    max-width: 95%;
+  }
+
+  @media #{$sm} {
+    max-width: 100%;
+    padding: 0 13px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: $work;
+}
+
+// input {
+//   font-family: $work;
+// }
+
+input,
+input:focus,
+input:active,
+textarea,
+textarea:focus,
+button,
+button:focus,
+.form-control:focus,
+button:active {
+  outline: none !important;
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.row {
+  margin: 0;
+}
+.col {
+  padding: 0;
+}
+
+button:disabled {
+  opacity: 0.5;
+}
+
+//<------ hide number button -------->
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+svg.MuiCircularProgress-svg {
+  color: #fff !important;
+}
+
+.error-field {
+  color: $mui-error !important;
+}
+
+.pink{
+  color: $pink;
+}
+
+h6.__text__{
+  display: flex;
+  flex-direction: row;
+  color: $pink;
+  width: 450px;
+  margin: 45px auto 30px;
+  span {
+    color: #000;
+    font-size: 22px;
+  }
+  &::before,
+  &::after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 3px solid;
+    margin: auto;
+  }
+  &::before {
+    margin-right: 10px;
+  }
+  &::after {
+    margin-left: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/*------------- scroll bar style -------------*/
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c40721;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c40721;
+}
+
+
+// #react-paginate ul {
+//   display: inline-block;
+//   padding-left: 15px;
+//   padding-right: 15px;
+// }
+
+// #react-paginate li {
+//   display: inline-block;
+// }
+
+// // .button {
+// //     background: $red-color;
+// //     color: $white-color;
+// //     padding: 17px 40px;
+// //     font-size: 18px;
+// //     font-family: $work;
+// //     transition: all ease-in-out .3s;
+// //     display: inline-block;
+// //     border-radius: 30px;
+// //     font-weight: 600;
+// //     border: 0;
+
+// //     @media #{$md} {
+// //         padding: 12px 20px;
+// //         font-size: 14px;
+// //         font-weight: 500;
+// //     }
+
+// //     &:hover {
+// //         background: $white-color;
+// //         transform: translateY(-7px);
+// //         color: $red-color;
+
+// //     }
+// // }
+

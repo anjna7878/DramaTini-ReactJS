@@ -1,0 +1,41 @@
+#user-dashboard-parent {
+  #tini-follow-list-section-parent {
+    box-shadow: $shadow;
+    padding: 18px 18px;
+    
+
+    #follow-listing {
+      .loading-section {
+        height: 350px;
+      }
+      h6.no-data {
+        margin: 150px auto;
+        text-align: center;
+        color: $pink;
+      }
+      .single-item {
+        margin: 6px 0;
+        background-color: rgba($grey, 0.5);
+        .MuiCardContent-root {
+          padding: 6px 0px;
+          // .event-logo {
+          //   .MuiAvatar-root {
+          //     width: 75px;
+          //     height: 75px;
+          //     margin: 0 auto;
+          //   }
+          // }
+        }
+
+        .actions-btn {
+          button {
+            background-color: $pink;
+            color: #fff;
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+  }
+}
+

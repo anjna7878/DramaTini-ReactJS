@@ -1,0 +1,201 @@
+#homeSection {
+  #banner-parent {
+    background-image: url("../../images/bc3.jpg");
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .banner-text {
+      text-align: center;
+      color: $white;
+      margin-top: 150px;
+      h1 {
+        font-size: 58px;
+        font-weight: 600;
+        color: $white;
+        span.welcome {
+          color: $pink;
+        }
+
+        span.dramatini {
+          color: $neon-yellow;
+        }
+      }
+      p {
+        font-size: 23px;
+        max-width: 800px;
+        margin: 0 auto;
+        color: $neon-light-yellow;
+      }
+    }
+    .user-types {
+      max-width: 849px;
+      margin: 114px auto 0;
+      .col {
+        padding: 0 19px;
+        cursor: pointer;
+      }
+      .cat-box {
+        height: 250px;
+        text-align: center;
+        border-radius: 8px;
+        .content-box {
+          background: linear-gradient(
+              176.63deg,
+              rgba(255, 130, 165, 0.55) 74.66%,
+              rgba(255, 255, 255, 0) 74.66%
+            ),
+            linear-gradient(
+              0deg,
+              rgba(255, 176, 191, 0.5),
+              rgba(255, 176, 191, 0.5)
+            );
+        }
+        img {
+          width: 100%;
+          height: 184px;
+        }
+        .content-box {
+          padding: 16px 0 36px;
+          height: 160px;
+          h3 {
+            font-size: 26px;
+            font-weight: 500;
+          }
+          p {
+            font-size: 14px;
+            margin: 8px auto 0;
+            max-width: 175px;
+          }
+          a {
+            width: fit-content;
+            padding: 4px 12px;
+            font-size: 12px;
+            border-radius: 2px;
+            margin: 12px auto 0;
+            border: 1px solid $gray;
+            color: $gray;
+          }
+        }
+      }
+    }
+  }
+
+  #our-services-parent {
+    padding-top: 225px;
+    .service-container {
+      max-width: 1368px;
+      margin: 0 auto;
+      .header-text-content {
+        text-align: center;
+        h1 {
+          font-size: 42px;
+          margin: 53px 0 4px;
+          font-weight: 600;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+      .service-list-parent {
+        margin: 50px 0;
+        .col-md-4 {
+          padding: 75px 0;
+          cursor: pointer;
+          &:hover {
+            background: linear-gradient(
+                269.77deg,
+                #ffe68d 0.22%,
+                #ff5988 96.86%
+              ),
+              linear-gradient(0deg, rgba(230, 60, 60, 0), rgba(230, 60, 60, 0));
+
+            .service-box h4,
+            .service-box p {
+              color: $white;
+            }
+          }
+          .service-box {
+            text-align: center;
+            img {
+              height: 75px;
+              width: 75px;
+            }
+            h4 {
+              font-size: 29px;
+              margin-bottom: 12px;
+            }
+            p {
+              max-width: 249px;
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #video-section-parent {
+    height: 569px;
+    text-align: center;
+    background-image: url("../../images/video_bc.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    h1 {
+      padding-top: 125px;
+      font-size: 42px;
+      color: $neon-yellow;
+      font-weight: 600;
+      letter-spacing: 8px;
+    }
+    p {
+      font-size: 20px;
+      color: $white;
+      margin-bottom: 32px;
+    }
+    .watch-video {
+      width: 275px;
+      text-transform: capitalize;
+      border-radius: 50px;
+      font-size: 32px;
+      svg {
+        font-size: 60px;
+      }
+    }
+  }
+
+  #our-gallery {
+    .container {
+      max-width: 1368px;
+      .header-text-content {
+        text-align: center;
+        margin-bottom: 48px;
+        h1 {
+          font-size: 42px;
+          margin: 53px 0 4px;
+          font-weight: 600;
+        }
+        p {
+          margin-bottom: 22px;
+        }
+      }
+    }
+  }
+
+  #google-map-section {
+    position: relative;
+    height: 550px;
+    max-width: 1368px;
+    margin: 0 auto 80px;
+    .header-text-content {
+      text-align: center;
+      margin-bottom: 34px;
+      h1 {
+        font-size: 42px;
+        margin: 53px 0 4px;
+        font-weight: 600;
+      }
+    }
+  }
+}

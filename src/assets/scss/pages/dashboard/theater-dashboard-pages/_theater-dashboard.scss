@@ -1,0 +1,75 @@
+#user-dashboard-parent {
+  #theater-section-parent {
+    box-shadow: $shadow;
+    padding: 18px 36px;
+
+    form#theater-update-form {
+      svg {
+        color: $pink;
+      }
+      #file-upload {
+        color: red;
+        .MuiFormControl-root {
+          position: relative;
+        }
+        label#upload-btn1 {
+          position: absolute;
+          right: 15px;
+          bottom: 2px;
+          .MuiButtonBase-root {
+            border-radius: 0;
+            background-color: $pink;
+            color: $white;
+            text-transform: capitalize;
+            padding: 16px 16px;
+            border-bottom-right-radius: 4px;
+            border-top-right-radius: 4px;
+          }
+        }
+      }
+      .theater-map-location {
+        margin-top: 12px;
+
+        .input-group {
+          border-bottom: 1px solid grey;
+          input {
+            padding: 20px 12px;
+            border: none;
+          }
+        }
+        .input-group-text {
+          background: transparent;
+          border: none;
+          padding: 0 4px;
+        }
+        svg {
+          font-size: 18px;
+        }
+      }
+      #image-preview {
+        margin-top: 22px;
+        .img-box {
+          img {
+            width: 200px;
+            border: 1px solid lightgray;
+            border-radius: 6px;
+          }
+        }
+      }
+      .submit-btn {
+        margin-top: 50px;
+        margin-bottom: 40px;
+        button {
+          background: $pink;
+          border-radius: 50px;
+          padding: 10px 0;
+          color: $white;
+          font-size: 16px;
+          text-transform: capitalize;
+          width: 235px;
+          max-width: 325px;
+        }
+      }
+    }
+  }
+}

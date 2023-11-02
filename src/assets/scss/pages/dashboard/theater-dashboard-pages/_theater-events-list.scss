@@ -1,0 +1,85 @@
+#user-dashboard-parent {
+  #theater-events-listing-section-parent {
+    box-shadow: $shadow;
+    padding: 18px 18px;
+    height: 100%;
+
+    #event-listing {
+      .loading-section {
+        height: 500px;
+      }
+      .no-data {
+        text-align: center;
+        h6 {
+          margin: 150px auto 32px;
+          color: $pink;
+          font-size: 18px;
+        }
+        a {
+          background: $pink;
+          border-radius: 50px;
+          color: $white;
+          font-size: 14px;
+          padding: 12px 24px;
+          text-decoration: none;
+          font-weight: 500;
+        }
+      }
+      .single-event {
+        margin: 6px 0;
+        background-color: rgba($grey, 0.5);
+        .event-logo {
+          .MuiAvatar-root {
+            width: 75px;
+            height: 75px;
+            margin: 0 auto;
+          }
+        }
+        .event_basic_info {
+          display: flex;
+          justify-content: space-between;
+        }
+        .event_actions {
+          margin: auto;
+          .edit_btn {
+            background-color: $pink;
+            color: #fff;
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+  }
+  #theater-event-update-section-parent {
+    box-shadow: $shadow;
+    padding: 18px 18px;
+    height: 100%;
+
+    #event-create-form {
+      svg {
+        color: $pink;
+      }
+      .submit-btn {
+        margin-top: 50px;
+        margin-bottom: 40px;
+        button {
+          background: $pink;
+          border-radius: 50px;
+          padding: 10px 0;
+          color: $white;
+          font-size: 16px;
+          text-transform: capitalize;
+          width: 235px;
+          max-width: 325px;
+          &.cancel {
+            width: 165px;
+            background: white;
+            border: 1px solid lightgray;
+            color: $pink;
+            margin: 0 18px;
+          }
+        }
+      }
+    }
+  }
+}

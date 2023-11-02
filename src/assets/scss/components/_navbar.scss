@@ -1,0 +1,219 @@
+#main-navbar {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid $light-grey;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  height: 120px;
+
+  @media #{$xs} {
+    height: auto;
+  }
+
+  .navbar-brand {
+    min-width: 350px;
+    text-align: center;
+    position: relative;
+
+    @media #{$xs} {
+      min-width: 50px;
+    }
+    img {
+      width: 135px;
+      height: 200px;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -30%);
+      // &.app-logo-container {
+      //   width: 175px;
+      //   height: 225px;
+      //   @media #{$xs} {
+      //     width: 70px;
+      //     height: 100px;
+      //   }
+      // }
+
+      @media #{$xs} {
+        width: 50px;
+        height: 70px;
+        // position: unset;
+        // transform: unset;
+      }
+    }
+  }
+
+  #nav-center-part {
+    ul li {
+      text-align: center;
+      transition: all 0.3s ease-in-out;
+      margin: 0 8px;
+      border-bottom-right-radius: 8px;
+      border-top-left-radius: 8px;
+      &:hover {
+        transform: translateY(-3px);
+      }
+      &.get-started {
+        background-color: $pink;
+        width: 145px;
+      }
+      &.search-theaters {
+        background-color: $blue;
+        width: 288px;
+      }
+      a.nav-link {
+        color: $white;
+        font-size: 14px;
+        padding: 12px 0;
+      }
+    }
+  }
+
+  #login-sign_up {
+    ul {
+      button {
+        background-color: $gray;
+        border-top-left-radius: 8px;
+        border: 3px solid $pink;
+        text-transform: capitalize;
+        font-size: 14px;
+        font-weight: 400;
+        color: $pink;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          transform: translateY(-3px);
+          color: $white;
+        }
+      }
+      li {
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          transform: translateY(-3px);
+        }
+
+        &.sign-up {
+          background-color: $gray;
+          border-top-left-radius: 8px;
+          border: 3px solid $pink;
+          a.nav-link {
+            color: $pink;
+            font-weight: 500;
+          }
+          &:hover a.nav-link {
+            color: $white;
+          }
+        }
+        &.sign-in {
+          background: $pink;
+          border-bottom-right-radius: 8px;
+          border: 3px solid $pink;
+
+          a.nav-link {
+            color: $white;
+            font-weight: 500;
+          }
+          &:hover a.nav-link {
+            color: $gray;
+          }
+        }
+        a.nav-link {
+          font-size: 14px;
+          padding: 10px 16px;
+        }
+      }
+    }
+  }
+
+  #user-header-tab {
+    background: $pink;
+    border-radius: 3px;
+    .user-icon {
+      margin-top: 10px;
+      margin-left: 12px;
+    }
+    .user-name {
+      padding: 12px 12px 12px 8px;
+      font-size: 14px;
+      line-height: 21px;
+      color: white;
+      font-weight: 500;
+    }
+    .btn-more {
+      padding: 12px 8px 12px 0;
+      color: $white;
+    }
+  }
+
+
+  @media #{$xs} {
+    .navbar-brand {
+      text-align: left;
+    }
+
+    li.nav-item a.nav-link {
+      font-size: 15px;
+      padding: 8px 32px;
+    }
+  }
+
+  @media #{$md} {
+    li.nav-item a.nav-link {
+      font-size: 15px;
+      padding: 8px 32px;
+    }
+  }
+}
+
+#user-drop-long-menu {
+  ul {
+    padding: 0;
+    li {
+      border-bottom: 1px solid lightgray;
+      width: 100%;
+      .list-items {
+        min-width: 30px;
+      }
+    }
+  }
+}
+
+#sign-up-chooser-pop-up {
+  .body-content {
+    padding: 40px 35px 70px;
+    h2 {
+      font-size: 48px;
+      font-weight: 600;
+      text-align: center;
+      margin: 18px 0 36px;
+      padding: 0 18px;
+      span {
+        color: $pink;
+      }
+    }
+    .box {
+      text-align: center;
+      border-radius: 13px;
+      padding: 12px 12px 28px;
+      box-shadow: $shadow;
+      cursor: pointer;
+      h5 {
+        font-size: 28px;
+        line-height: 60px;
+      }
+      p {
+        max-width: 200px;
+        margin: 0 auto;
+      }
+      &.business {
+        background: $neon-yellow;
+      }
+      &.theater {
+        background: $pink;
+      }
+      &.tinis {
+        background: $neon-light-yellow;
+      }
+    }
+  }
+}
